@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: sercaner-db
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: sercaner-db
+      MYSQL_USER: root
+      MYSQL_PASSWORD:
+    ports:
+      - '3306:3306'
